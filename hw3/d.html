@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Yan-Yu Lin </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    a:link, a:visited {
+      color: white;
+      padding: 15px 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    a:hover, a:active {
+      background-color: #c2c2d6;
+    }
+
+    .body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    .header {
+      background-color: #666;
+      padding: 10px;
+      text-align: center;
+      color: black;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    .nav {
+      float: left;
+      width: 15%;
+      height: auto; /* only for demonstration, should be removed */
+      background: #999999;
+      padding: 20px;
+      font-size: 20px;
+      min-height: 700px;
+    }
+
+
+    .article {
+      float: left;
+      padding: 20px;
+      width: 85%;
+      background-image:url('https://images.pexels.com/photos/850796/pexels-photo-850796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+      min-height: 700px;
+      height: auto; /* only for demonstration, should be removed */
+      font-size: 20px;
+    }
+
+    /* Clear floats after the columns */
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <b style="font-size: 400%;">自我介紹</b>
+  </div>
+
+<section>
+  <div class="nav">
+    <ul>
+      <li><a href="d.html">自我介紹</a></li>
+      <li><a href="e.html">學號及照片</a></li>
+      <li><a href="f.html">生活照</a></li>
+    </ul>
+  </div>
+  
+  <div class="article">
+    <p>大家好,我是林彥宇,目前是台灣科技大學電機工程學系四年級,興趣打籃球、打程式,對於電腦相關的事情都蠻有熱情的。</p>
+  </div>
+</section>
+
+</body>
+</html>
